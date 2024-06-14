@@ -71,7 +71,7 @@ class Exercise(models.Model):
         unique_together = ('body_part', 'equipment', 'name')
 
     def __str__(self):
-        return f"Exercise(body_part={self.body_part}, equipment={self.equipment}, name={self.name}, user={self.user})"
+        return f"Exercise(body_part={self.body_part}, equipment={self.equipment}, name={self.name})"
 
 
 class Workout(IndexedTimeStampedModel):
